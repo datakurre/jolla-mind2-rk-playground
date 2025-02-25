@@ -1,5 +1,5 @@
 [project]
-name = "jolla-mind2-rknn-sandbox"
+name = "jolla-mind2-rk-playground"
 version = "0.0.1"
 readme = "README.md"
 authors = [

@@ -1,7 +1,7 @@
 { pkgs, config, ... }:
 {
   imports = [
-    ./devenv/modules/rknn.nix
+    ./devenv/modules/airockchip.nix
     ./devenv/modules/python.nix
   ];
 
@@ -17,7 +17,8 @@
     (pkgs.buildFHSEnv {
       name = "python";
       targetPkgs = pkgs: [
-        config.outputs.rknn.librknnrt
+        config.outputs.airockchip.librknnrt
+        config.outputs.airockchip.librkllmrt
         config.outputs.python.virtualenv
       ];
       multiArch = true;
